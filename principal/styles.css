@@ -1,0 +1,233 @@
+@font-face {
+    font-family: bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: italic;
+    src: url(../fonts/Poppins-MediumItalic.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+}
+#principal{
+    display: flex;
+}
+#left{
+    width: 70%;
+}
+#right{
+    width: 30%;
+    height: 100vh;
+    background-color: #F5EBE0;
+}
+#title_conte{
+    text-align: center;
+}
+#title{
+    font-family: bold;
+    font-size: clamp(1rem, 5vw, 3.3rem);
+    margin: 6rem auto;
+    max-width: 25vw;
+}
+#conte{
+    font-family: regular;
+    font-style: italic;
+    font-weight: 600;
+    margin: -1rem auto;
+    max-width: 40vw;
+    font-size: clamp(1rem, 4vw, 1.7rem);
+}
+a{
+    text-decoration: none;
+    font-family: bold;
+    text-align: center;
+}
+#subjects{
+    width: 80%;
+    height: 22vh;
+    margin: 6rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#subject1{
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    width: 80%;
+    font-size: clamp(0.9rem, 1.5vw, 1.4rem);
+    flex-wrap: wrap;
+}
+#subject2{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: clamp(0.9rem, 1.5vw, 1.4rem);
+    flex-wrap: wrap;
+}
+.materia:active{
+    box-shadow: inset -1px -1px 11px -2px black;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
+.materias:active{
+    box-shadow: inset -1px -1px 11px -2px black;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
+.materia{
+    box-shadow: 1px 1px 11px 2px black;
+    border-radius: 17px;
+    color: white;
+    padding: 1rem 4rem;
+    width: 9rem;
+}
+.materias{
+    box-shadow: 1px 1px 11px 2px black;
+    border-radius: 17px;
+    color: white;
+    width: 9rem;
+    padding: 1rem 2rem;
+}
+#spanish{
+    background-color: #ED8789;
+}
+#science{
+    background-color: #30BF54;
+}
+#english{
+    background-color: #F2CA50;
+}
+#social{
+    background-color: #05AFF2;
+}
+#match{
+    background-color: #3B5CBF;
+}
+#logotipo{
+    font-family: bold;
+    color: #221F1F;
+    display: flex;
+    justify-content: end;
+    font-size: clamp(1rem, 4vw, 2rem);
+    margin-right: 1rem;
+}
+#image{
+    position: absolute;
+    width: 43vw;
+    right: 1rem;
+    top: 15rem;
+}
+.bottom{
+    display: none;
+}
+.Top{
+    display: none;
+}
+@media (max-width:1641px){
+    #title{
+        max-width: 30vw;
+    }
+    #conte{
+        margin: -1rem auto;
+        max-width: 43vw;
+        font-size: clamp(1rem, 4vw, 1.7rem);
+    }
+    #image{
+        top: 18rem;
+    }
+    #subjects{
+        margin: 6rem auto;
+    }
+    .materia{
+        padding: 1.1rem 2rem;
+        width: 9rem;
+    }
+    .materias{
+        width: 9rem;
+        padding: 1.1rem 2rem;
+    }
+}
+@media (max-width:1265px){
+    #image{
+        top: 35rem;
+    }
+}
+@media (max-width:1502px){
+    #title{
+        max-width: 35vw;
+    }
+}
+@media (max-width:1235px){
+    #title{
+        max-width: 40vw;
+    }
+    #image{
+        top: 29rem;
+    }
+}
+@media (max-width:540px){
+    #title{
+        max-width: 50vw;
+    }
+    #conte{
+        margin: -4rem auto;
+        max-width: 49vw;
+        font-size: clamp(1rem, 2vw, 1.7rem);
+    }
+}
+@media (max-width:431px){
+    #left{
+        width: 100%;
+    }
+    #title{
+        margin: 3rem auto;
+        max-width: 45vw;
+    }
+    #conte{
+        margin: -1rem auto;
+        max-width: 76vw;
+        font-size: clamp(1.2rem, 4vw, 1.7rem);
+    }
+    #subjects{
+        margin: 3rem auto;
+    }
+    .materia{
+        width: auto;
+        padding: 0.5rem 2rem;
+        margin-top: 1rem;
+    }
+    .materias{
+        margin-top: 1rem;
+        width: auto;
+        padding: 0.5rem 2rem;
+    }
+    #principal{
+        display: flex;
+        flex-direction: column;
+    }
+    #right{
+        display: none
+    }
+    .bottom{
+        display: block;
+    }
+    .Top{
+        display: block;
+        background-color:#F5EBE0;
+        width: 100vw;
+        height: 7vh;
+    }
+    #logotipo{
+        font-size: clamp(1.5rem, 4vw, 1.7rem);
+    }
+    #image{
+        top: 40em;
+        width: 70vw;
+    }
+}

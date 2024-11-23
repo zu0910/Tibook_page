@@ -1,0 +1,135 @@
+@font-face {
+    font-family: bold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: regular;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: italic;
+    src: url(../fonts/Poppins-MediumItalic.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+body{
+    overflow: hidden;
+
+}
+#main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.materias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 75%;
+    z-index: 1;
+}
+#left{
+    width: 25%;
+    height: 100vh;
+    background-color: pink;
+}
+#imagen{
+    width: 140%;
+    z-index: 0;
+    margin-top: 10%;
+    min-width: 20rem;
+}
+#center{
+    margin-left: 5rem;
+    width: 50%;
+    min-width: 28rem;
+}
+#welcome{
+    font-family: bold;
+    margin-top: 3vw;
+    margin: 2 auto;
+    font-size: clamp(2rem,3vw,4rem);
+}
+#text{
+    font-family: regular;
+    font-size: clamp(1.3rem,2vw,2.5rem);
+    margin-top: 5vw;
+    padding: 0 1rem;
+    
+}
+#right{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+#logo{
+    font-family: bold;
+    position: absolute;
+    font-size: clamp(1rem,2vw,2rem); 
+    height: 10vh;
+    margin-left: 1vw;
+}
+#subjects{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+#subjects a{
+    text-decoration: none;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-family: regular;
+}
+
+.materia{
+    margin-bottom: 5rem;
+    box-shadow: 1px 1px 11px 2px black;
+    border-radius: 17px;
+    color: white;
+    padding: 1.5rem 2.2rem;
+    width: 9rem;
+    
+}
+.materia:active{
+    box-shadow: inset -1px -1px 11px -2px black;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
+#spanish{
+    background-color: #ED8789;
+}
+#science{
+    background-color: #30BF54;
+}
+#english{
+    background-color: #F2CA50;
+}
+#social{
+    background-color: #05AFF2;
+}
+#match{
+    background-color: #3B5CBF;
+}
+@media only screen and (max-width:1177px){
+    #center{
+        margin-left: 0;
+    }
+    .materia{
+        padding: 1rem 1.5rem;
+        margin-bottom: 2rem;
+    }
+}
+@media only screen and (max-width:800px){
+    #imagen{
+        display: none;
+    }
+}
+@media only screen and (max-width:600px){
+    #center{
+        width: 100%;
+        min-width: 0;
+    }
+    #subjects{
+        margin-top: 0rem;
+    }
+}

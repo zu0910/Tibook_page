@@ -1,0 +1,326 @@
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: poppinsBold;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: poppins;
+}
+body{
+    background-color: #404BC2;
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-size: clamp(1rem,3vw,1.5rem);
+}
+.contain {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.log {
+    width: 55rem;
+    background-color: #f2f2f2;  
+    margin-left: 5vw;
+    height: 50rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 20px #221F1F;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+.logitipe {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    font-size: clamp(1rem,3vw,1.5rem);
+}
+.logitipe p {
+    font-family: poppinsBold;
+}
+.logitipe button {
+    font-size: clamp(1rem,3vw,1.5rem);
+    border: none;
+}
+.Log1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -2;
+}
+.pLogin{
+    font-size: clamp(2rem,4vw,4rem);
+    font-family: poppinsBold;
+    margin: 2.5rem 0;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.login a{
+    width: 30%;
+    text-align: center;
+    height: auto;
+    margin: 2rem 0;
+}
+.divUser {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+.user {
+    width: 70%;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 3rem;
+    background-color: #6E79F7;
+    font-size: clamp(1rem,3vw,1.5rem);
+    margin-left: 32px;
+    color: white;
+    margin-top: 1rem;
+}
+.user::placeholder{
+    color: white;
+}
+.icon {
+    position: relative;
+    left: -60px;
+    width: 2rem;
+}
+.divPass {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+.password {
+    width: 70%;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 3rem;
+    background-color: #6E79F7;
+    font-size: clamp(1rem,3vw,1.5rem);
+    margin-left: 32px;
+    color: white;
+}
+.password::placeholder{
+    color: white;
+}
+.mostrar {
+    display: flex;
+    width: 70%;
+    gap: 0.5rem;
+}
+.Blogin{
+    border: none;
+    width: 100%;
+    background-color: #4F73D6;
+    color: white;
+    padding: 1rem 0;
+    border-radius: 2rem;
+    font-size: clamp(1rem,3vw,1.5rem);
+    
+}
+.redondo{
+    height: 8rem;
+    width: 100%;
+    clip-path: ellipse(55% 50% at 50% 50%);
+    margin-top: -3.2rem;
+    background-color:#6A81EA;
+    z-index: 1;
+}
+.Log2 {
+    display: flex;
+    height: 50rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: #6A81EA;
+    transition: 1s;
+    width: 100%;
+    margin-top: 9rem;
+    position: relative;
+    z-index: 2;
+}
+#sigIn{
+    display: none;
+    cursor: pointer;
+}
+input[type="submit"]{
+    cursor: pointer;
+}
+.dontHave{
+    margin-top: -6rem;
+    z-index: 2;
+    color: white;
+    background-color: #6A81EA;
+    border: none;
+    font-size: clamp(1rem,2vw,1.3rem);
+}
+.dontHave span{
+    font-weight: 700;
+    text-decoration:underline;
+    cursor: pointer;
+}
+.pSignin{
+    font-size: clamp(2rem,4vw,4rem);
+    font-family: poppinsBold;
+    margin: 2.5rem 0;
+    color: white;
+    z-index: 2;
+    margin-top: 10rem;
+}
+.singUp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 1.5rem;
+}
+.singUp input[type="submit"] {
+    border: none;
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 1rem 0;
+    border-radius: 2rem;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+}
+.singUp a{
+    width: 30%;
+    margin: 2rem 0;
+}
+.singUp input[type="text"]::placeholder{
+    color: black;
+}
+.singUp input[type="password"]::placeholder{
+    color: black;
+}
+.userS {
+    width: 70%;
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: white;
+    font-size: clamp(1rem,3vw,1.5rem);
+    margin-left: 32px;
+    color: black;
+    margin-top: 1rem;
+}
+.passwordS {
+    width: 70%;
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: white;
+    font-size: clamp(1rem,3vw,1.5rem);
+    margin-left: 32px;
+    color: black;
+    margin-top: 1rem;
+}
+.comfirPasswordS {
+    width: 70%;
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: white;
+    font-size: clamp(1rem,3vw,1.5rem);
+    margin-left: 32px;
+    color: black;
+    margin-top: 1rem;
+}
+.people{
+    width: clamp(25rem, 45vw, 45rem);
+    object-fit: contain;
+    margin-left: -8rem;
+    margin-bottom: -10rem;
+    z-index: 2;
+}
+dialog{
+    margin: 40vh auto;
+    border: none;
+    border-radius: 2em;
+    text-align: center;
+    padding: 2em;
+    box-shadow: 0px 0px 20px #221F1F;
+}
+dialog i{
+    transform: scale(4);
+    margin-bottom: 1em;
+}
+dialog button{
+    margin-top: 1em;
+    border: none;
+    width: 30%;
+    background-color: #4F73D6;
+    color: white;
+    padding: 1rem 0;
+    border-radius: 2rem;
+    font-size: clamp(1rem,3vw,1.5rem);
+}
+@media screen and (max-width:1545px) {
+    .people{
+        display: none;
+    }
+    .contain{
+        width: 100vw;
+        justify-content: center;
+    }
+    .log{
+        margin-right: 1rem;
+    }
+    .user{
+        padding: 0.8rem;
+    }
+    .password{
+        padding: 0.8rem;
+    }
+    dialog{
+        width: 80vw;
+    }
+}
+@media screen and (max-height:900px) {
+    .log{
+        height: 35rem;
+    }
+    .people{
+        display: none;
+    }
+    .Log2{
+        margin-top: 3rem;
+        position: relative;
+    }
+    .redondo{
+        clip-path: ellipse(70% 50% at 50% 50%);
+    }
+    .singUp{
+        gap: 0.5rem;
+    }
+    .userS{
+        margin-left: 0;
+    }
+    .passwordS{
+        margin-left: 0;
+    }
+    .comfirPasswordS{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:500) {
+    .log{
+        height: 35rem;
+    }
+    .Log2{
+        margin-top: 5rem;
+    }
+}

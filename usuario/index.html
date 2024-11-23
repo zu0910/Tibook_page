@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T!BOOK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logitipo">
+        <h1><a href="../principal/index.html">T!BOOK</a></h1>
+        <button class="log_out" onclick="CerrarSesion()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M5 21q-.825 0-1.412-.587T3 19V5q0-.825.588-1.412T5 3h7v2H5v14h7v2zm11-4l-1.375-1.45l2.55-2.55H9v-2h8.175l-2.55-2.55L16 7l5 5z"/></svg> 
+            Cerrar sesion</button>
+    </div>
+    <div class="principal">
+        <div class="perfil">
+            <div class="img_name">
+                <div class="foto"><img src="../imagenes/foto_user.png" alt=""></div>
+                <div class="nombre">Esteban García</div>
+            </div>
+            <div class="div_puntos">
+                <div class="respuestas">
+                    <p id="p_r">Respuestas</p>
+                    <p id="cant_respuestas" class="punto_res">0</p>
+                </div>
+                <span></span>
+                <div class="Estrellas">
+                    <p>Estrellas</p>
+                    <p class="punto_res" id="punto_res">0</p>
+                </div>
+            </div>
+            <!-- <div class="top_div">
+                <img src="../imagenes/star_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="" class="estrella">
+                <div class="top">TOP 5</div>
+            </div> -->
+        </div>
+        <div class="pre_res">
+            <div class="botones">
+                <button id="activo" class="respuestas">Respuestas</button>
+                <button class="preguntas">Preguntas</button>
+            </div>
+            <div class="cont_preguntas" id="cont_preguntas">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+<script src="/LogicaSesion/LogicaG.js"></script>
+</html>

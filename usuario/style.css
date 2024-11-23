@@ -1,0 +1,138 @@
+@font-face{
+    src: url(../fonts/Poppins-Regular.ttf);
+    font-family: regular;
+}
+*{
+    font-family: regular;
+    margin: 0;
+}
+button{
+    cursor: pointer;
+}
+body{
+    width: 100vw;
+    background-color: #51C8BC;
+    overflow-x: hidden;
+}
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.logitipo {
+    padding: 1rem;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+}
+.perfil {
+    width: 30%;
+    min-width: 21rem;
+    margin-left: 1rem;
+}
+.img_name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.foto img{
+    width: 5rem;
+    border-radius: 50%;
+}
+.nombre {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+.div_puntos {
+    margin-top: 2.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    color: white;
+}
+.div_puntos span{
+    margin-top: 0.2rem;
+    width: 2px;
+    height: 2.3rem;
+    background-color: #8D8D8D;
+}
+.punto_res{
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: black;
+}
+.top_div {
+    margin: 2rem auto;
+    background-color: aliceblue;
+    display: flex;
+    gap: 1rem;
+    width: 7rem;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+.pre_res {
+    width: 68%;
+    min-width: 30rem;
+}
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 80%;
+}
+.botones button{
+    background-color: inherit;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+#activo{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+.cont_preguntas{
+    background-color: aliceblue;
+    margin: 1rem auto;
+    width: 90%;
+    height: 80vh;
+    border-radius: 30px;
+    border: solid transparent;
+    overflow: auto;
+}
+.texto{
+    width: 80%;
+    margin: 1rem auto;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border-bottom: #cacaca solid 2px;
+}
+.log_out{
+    border: none;
+    border-radius: 5rem;
+    background-color: #51C8BC;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+@media(max-width:1100px){
+    .perfil{
+        margin: 0 auto;
+    }
+    .pre_res{
+        margin: 0 auto;
+        width: 90%;
+        min-width: 23rem;
+    }
+}
+@media(max-width:560px){
+    .botones button{
+        font-size: 1rem;
+    }
+}
